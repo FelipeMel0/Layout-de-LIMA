@@ -6,14 +6,209 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.959);
+    background-color: rgba(0, 0, 0, 0.959); 
     color: white;
     display: flex;
     flex-direction: column;
     font-family: 'Karla', 'sans-serif';
+    
 }
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0vh 5vw; */
+}
+.logo{
+    text-decoration: none;
+    user-select: none;
+}
+.links ul{
+    list-style-type: none;
+    gap: 47%;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    transition: all .5s;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.central{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 5vw;
+    /* right: 100px; */
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.cliente{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: 5vw;
+    /* left: 100px; */
+    align-items: center;
+    gap: 50px;
+    margin-right: 5vw;
+}
+.cliente .cadastrar{
+    display: flex;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 196, 133);
+    border-radius: 10px;
+}
+
+.logoFigos{
+    width: 5vw;
+    height: 5vh;
+}
+
+main{
+    padding: 10vh 10vh;
+    display: flex;
+}
+
+.pedidosCliente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.verCardapio{
+    text-decoration: underline gold;
+    color: gold;
+
+}
+
+main img{
+    width: 34.35vw;
+    height: 66.72vh;
+    margin-right: 50px;
+}
+
+main p{
+    color: rgb(199, 196, 196);
+}
+
+main h1{
+    font-size: 70px;
+    max-width: 70%;
+}
+
+.qualquerHora{
+    color: red;
+}
+
+.pedirAgora{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(226, 41, 63);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+}
+
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
+.prato1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(57, 57, 57);
+    width: 250px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.massaEspecial{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    justify-content: flex-start;
+    z-index: 1;
+    left: 50px;
+    bottom: 25px;
+}
+.prato2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(57, 57, 57);
+    width: 250px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.saladaEspecial{
+    display: flex;
+    width: 85px;
+    height: 85px;
+    position: relative;
+    justify-content: flex-start;
+    z-index: 1;
+    left: 60px;
+    bottom: 25px;
+}
+
+.massaTradicional{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    justify-content: flex-start;
+    z-index: 1;
+    left: 50px;
+    bottom: 25px;
+}
+.prato3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(57, 57, 57);
+    width: 250px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.nomePrato{
+    font-size: 15px;
+}
+.precoPrato{
+    color: rgb(226, 41, 63);
+    font-size: 12px;
+    justify-content: space-between;
+}
+.pedir{
+    color: rgb(190, 190, 190);
+    text-decoration: underline rgb(190, 190, 190);
+}
+
+/* .precoAvaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+} */

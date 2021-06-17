@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Figos</title>
 </head>
+
 <body>
     <header>
-        <a href="#" class="logo"><img src="" alt=""></a>
+        
         <nav class="links">
             <ul class="menu">
-                <li><a href="#" class="achar">Achar Comida</a></li>
-                <li><a href="#" class="monitorar">Monitorar</a></li>
-                <li><a href="#" class="acharRestaurante">Achar Restaurante</a></li>
-                <li><a href="#" class="localizacao">Localização</a></li>
-                <li><a href="#" class="carrinho"><img src="" alt=""></a></li>
-                <li><a href="#" class="entrar">Entrar</a></li>
-                <li><a href="#" class="cadastrar">Cadastrar</a></li>
+
+                <div class="central">
+                    <!-- <a href="#" ><img src="img/FigosLogo.png" alt="" class="logo"></a> -->
+                    <li><a href="#"><img src="img/FigosLogo.png" alt="" class="logoFigos"></a></li>
+                    <li><a href="#" class="achar">Encontrar Comida</a></li>
+                    <li><a href="#" class="monitorar">Monitorar</a></li>
+                    <li><a href="#" class="acharRestaurante">Encontrar Restaurante</a></li>
+                    <li><a href="#" class="localizacao">Localização</a></li>
+                </div>
+                <div class="cliente">
+                    <li><a href="#" class="carrinho">&#128722;</a></li>
+                    <li><a href="#" class="entrar">Entrar</a></li>
+                    <li><a href="#" class="cadastrar">Cadastrar</a></li>
+                </div>
             </ul>
         </nav>
     </header>
 
     <main>
-        <p>Fácil de pedir sua comida</p>
-        <h1>Pedidos Saborosos & Comida Fresca</h1>
-        <h1>a qualquer hora!</h1>
-        <p>Apenas confirme o seu pedido e se delicie com nosso rápido delivery.</p>
-        <a href="#" class="pedirAgora">Pedir Agora</a>
-        <a href="#" class="verCardapio">Ver Cardápio</a>
+        <div>
+            <p>Fácil de pedir sua comida</p>
+            <h1>Pedidos Saborosos & Comida Fresca</h1>
+            <h1 class="qualquerHora">a qualquer hora!</h1>
+            <p>Apenas confirme o seu pedido e se delicie com nosso rápido delivery.</p>
+            <div class="pedidosCliente">
+                <a href="#" class="pedirAgora">Pedir Agora</a>
+                <a href="#" class="verCardapio">Ver Cardápio</a>
+            </div>
+        </div>
+        <img src="img/PratoDeAlmoço.png" alt="">
+        
     </main>
 
     <footer>
+        <img src="img/MassaEspecial.png" alt="" class="massaEspecial">
         <div class="prato1">
-            <p>Massa Especial</p>
-            <p>R$20,00</p>
-            <p>Pedir Agora</p>       
+            
+            <p class="nomePrato">Massa Especial</p>
+            <p class="precoPrato">⠀⠀⠀⠀⠀⠀⠀⭐⭐⭐⭐⭐⠀⠀⠀⠀R$20,00</p>
+            <a href="#" class="pedir">Pedir Agora</a>
         </div>
 
+        <img src="img/SaladaEspecial.png" alt="" class="saladaEspecial">
         <div class="prato2">
-            <p>Salada Especial</p>
-            <p>R$24,00</p>
-            <p>Pedir Agora</p>
+            <p class="nomePrato">Salada Especial</p>
+            <p class="precoPrato">⠀⠀⠀⠀⠀⠀⭐⭐⭐⭐⭐⠀⠀⠀⠀R$24,00</p>
+            <a href="#" class="pedir">Pedir Agora</a>
         </div>
+
+        <img src="img/MassaTradicional.png" alt="" class="massaTradicional">
         <div class="prato3">
-            <p>Massa Tradicional</p>
-            <p>R$42,00</p>
-            <p>Pedir Agora</p>
+            <p class="nomePrato">Massa Tradicional</p>
+            <div class="precoAvaliacao"> 
+                <p class="precoPrato">⠀⠀⠀⠀⭐⭐⭐⭐⭐⠀⠀⠀⠀R$42,00</p>
+            </div>
+            <a href="#" class="pedir">Pedir Agora</a>
         </div>
     </footer>
 </body>
+
 </html>
