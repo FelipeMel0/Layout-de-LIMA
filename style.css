@@ -6,7 +6,9 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.959); 
+    /* background-color: rgba(0, 0, 0, 0.959);  */
+    background: rgb(97,97,97);
+    background: linear-gradient(142deg, rgba(97,97,97,1) 0%, rgba(51,51,51,1) 5%, rgba(22,22,22,1) 9%, rgba(10,10,10,1) 15%, rgba(10,10,10,1) 83%, rgba(103,0,0,1) 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,11 +16,16 @@ body{
     
 }
 header{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0vh 5vw; */
+    padding: 0vh 0vw; */
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
 }
 .logo{
     text-decoration: none;
@@ -26,28 +33,44 @@ header{
 }
 .links ul{
     list-style-type: none;
-    gap: 47%;
 }
-.links a {
+
+/* @media (max-width: 1024px){
+    .links ul{
+        list-style-type: none;
+        gap: 10%;
+    }
+} */
+
+/* .links a {
     text-decoration: none;
     color: white;
     user-select: none;
     transition: all .5s;
-}
-.menu{
+    margin-top: 2vh;
+} */
+/* .menu{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-}
+} */
 .central{
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left: 5vw;
+    margin-left: 4vw;
     /* right: 100px; */
     gap: 100px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    margin-left: 5vh;
+    margin-top: 1vh;
+}
+.central a{
+    text-decoration: none;
+    color: white;
+    user-select: none;
 }
 .cliente{
     display: flex;
@@ -57,7 +80,7 @@ header{
     /* left: 100px; */
     align-items: center;
     gap: 50px;
-    margin-right: 5vw;
+    
 }
 .cliente .cadastrar{
     display: flex;
@@ -67,15 +90,21 @@ header{
     justify-content: center;
     background-color: rgb(56, 196, 133);
     border-radius: 10px;
+    filter: drop-shadow(0px 5px 15px rgba(56, 196, 133, 0.801));
 }
-
+.cliente a{
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    margin-top: 1vh;
+}
 .logoFigos{
     width: 5vw;
     height: 5vh;
 }
 
 main{
-    padding: 10vh 10vh;
+    padding: 7vh 7vh;
     display: flex;
 }
 
@@ -122,6 +151,7 @@ main h1{
     border-radius: 15px;
     width: 120px;
     height: 40px;
+    filter: drop-shadow(0px 5px 15px rgba(226, 41, 62, 0.801));
 }
 
 footer{
@@ -139,6 +169,11 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 85%);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(65,65,65,1) 47%, rgba(181,181,187,1) 100%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%); */
+    
 }
 .massaEspecial{
     display: flex;
@@ -159,6 +194,8 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 85%);
 }
 .saladaEspecial{
     display: flex;
@@ -190,6 +227,8 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 85%);
 }
 .nomePrato{
     font-size: 15px;
